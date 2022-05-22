@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <!-- tr, td:not(:last-child) { border-right: none;} -->
+    <style>
+        table,th,td {border-collapse: collapse; border: 1px solid black;}
+        table,th {border-top: none;} /* head */
+        table,th:last-child,th:first-child {border-left: none; border-right: none;} /* first and last column in head */
+        table,td:first-child {border-left: none;} /* first column */
+        table,td:last-child {border-right: none;} /* last column */
+        table,tr:last-child td {border-bottom:none;} /* last row */
+        .tr1, .tr1 td {border: none;}
+        
+    </style>
     
     
 </head>
@@ -22,7 +32,7 @@
 
     <div>
         <!-- 3 -->
-        <table>
+        <table class="tr1">
             <tr>
                 <td > <img src="github.png" alt="github logo." style="width:30px;height:30px;">  </td>
                 <td > <a href="https://github.com/NorahAlghomayjan"> my github..</a> </td>
@@ -37,7 +47,7 @@
     <div>
         <!-- 4 -->
         <h2> Technologies </h2>
-        <table rules= "all">
+        <table>
             <tr>
                 <th> Front-End </th>
                 <th> Python </th>
